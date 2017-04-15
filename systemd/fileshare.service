@@ -1,0 +1,10 @@
+[Unit]
+Description=File Sharing
+
+[Service]
+Environment="PATH=/home/andy/.dotfiles/bin:/home/andy/.rbenv/bin:/home/andy/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/games"
+ExecStart=%h/proj/fileshare/launch.sh
+Restart=always
+
+[Install]
+WantedBy=default.target
